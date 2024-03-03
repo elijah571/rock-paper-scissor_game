@@ -45,7 +45,7 @@ function playGame(playerMove) {
     localStorage.setItem('score', JSON.stringify(score));
     updateScore();
     document.querySelector('.js-moves')
-        .innerHTML = `You  <img src="images/${playerMove}.png" alt="">, Computer <img src="images/${computerMove}.png" alt="">`;
+        .innerHTML = `You  <img src="images/${playerMove}.png" alt=""> Computer <img src="images/${computerMove}.png" alt="">`;
 
     document.querySelector('.js-result').innerHTML = `${result}`;
     
