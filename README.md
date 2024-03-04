@@ -6,4 +6,4 @@ it then check if it's a win, tie or loss.
 The score is update in the page.
 This project is built with htm, css and majorly javasript.
 The project came as a result of testing my knowledge, in javascript topics like:
-variables, Math.random function, operators, conditional statement, function, object, localStorage and Json.
+variables, Math.random function, operators, conditional statement, function, object, DOM, localStorage and Json.
