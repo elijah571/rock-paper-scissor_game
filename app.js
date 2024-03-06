@@ -5,6 +5,33 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 };
 updateScore();
 
+document.body.addEventListener('keydown', (event) => {
+    if (event.key === 'r'){
+        playGame('rock');
+    } else if (event.key === 'p') {
+        playGame('paper');
+    }else if (event.key === 's') {
+        playGame('scissors');
+    } else if (event.key === 'a') {
+        playGame(autoPlay());
+    }
+})
+const rockButton = document.querySelector('.js-rock');
+rockButton.addEventListener('click', () => {
+    playGame('rock');
+});
+
+const paperButton = document.querySelector('.js-paper');
+
+paperButton.addEventListener('click', () => {
+    playGame('paper');
+})
+
+const scissorsButton = document.querySelector('.js-scissors');
+scissorsButton.addEventListener('click', () => {
+    playGame('scissors');
+})
+
 function playGame(playerMove) {  
     const computerMove =  pickComputerMove();
 
